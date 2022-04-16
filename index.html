@@ -111,7 +111,7 @@ li a:hover {
       <a href="#"> <img class="voice" src="https://drive.google.com/uc?export=view&id=1R5o44naSxYTlL3nwGay3IUBnu21Tv0MW" title="Search" type="button" onclick="printname()"></a>
     </div>
     <div class="buttons">
-      <button class="button" type="button" onclick="keyform()" >Target Keyword</button>
+      <button class="button" type="button" onclick="printname()" >Target Keyword</button>
      </div>
   </body>
 </html>
@@ -180,43 +180,6 @@ li a:hover {
   var giveName = giveName.replace("Other", "Alternatives")
 
   window.open('http://google.com/search?q='+giveName, "_self");
-  
-}
-
-<script>
- function keyform(){
-  var giveName = document.getElementById("name").value;
-  var giveName = giveName.replace("How might we", "")
-  var giveName = giveName.replace("How can i ", "")
-  var giveName = giveName.replace("Who is the ", "")
-  var giveName = giveName.replace("How to ", "")
-  var giveName = giveName.replace("Who is the ", "")
-  var giveName = giveName.replace("Why" , "Reasons")
-  var giveName = giveName.replace("When was", "time when")
-  var giveName = giveName.replace("When was the", "time of ")
-  var giveName = giveName.replace("Where was", "location of")
-  var giveName = giveName.replace("What is the meaning of", "meaning of")
-  var giveName = giveName.replace("What are the", "")
-  var giveName = giveName.replace("Other", "Alternatives for ")
-  var giveName = giveName.replace("Denver is bad", "Denver is cool")
-    // short letter onces
-  var giveName = giveName.replace("how might we", "")
-  var giveName = giveName.replace("how can i", "")
-  var giveName = giveName.replace("how might we", "")
-  var giveName = giveName.replace("how to", "")
-  var giveName = giveName.replace("who is the", "")
-  var giveName = giveName.replace("why" , "Reasons")
-  var giveName = giveName.replace("when was", "time when")
-  var giveName = giveName.replace("when did", "time when")
-  var giveName = giveName.replace("where was", "location of")
-  var giveName = giveName.replace("when was", "time when")
-  var giveName = giveName.replace("what is the meaning of", "meaning of")
-  var giveName = giveName.replace("What are the", "")
-  var giveName = giveName.replace("Other", "Alternatives")
-
-
-  document.getElementById("printHello").innerHTML = "    You can search it as ' " + giveName + "'";
-
   
 }
  </script>
