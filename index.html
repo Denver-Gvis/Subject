@@ -66,9 +66,9 @@ li a:hover {
   outline:30px;
   margin:5px;
 
-  
+
 }
-.voice{
+.search_icon{
   height:30px;
   position:relative;
   top:5px;
@@ -102,27 +102,23 @@ li a:hover {
     <header>
   <body style="background-color:white;">
     <div class="logo">
-      <img alt="Subject" src="https://drive.google.com/uc?export=view&id=1V9EhMH8-mQQmLGOyH2Jb6w7W679vvZGF">
+      <img alt="Google" src="https://drive.google.com/uc?export=view&id=1V9EhMH8-mQQmLGOyH2Jb6w7W679vvZGF">
     </div>
     <div class="bar">
       <input class="searchbar" type="text" title="Search" id="name" name="fname" value="" type="submit">
-	  
-	  
-      <a href="#"> <img class="voice" src="https://drive.google.com/uc?export=view&id=1R5o44naSxYTlL3nwGay3IUBnu21Tv0MW" title="Search" type="button" onclick="printname()"></a>
+
+
+      <a href="#"> <img class="search_icon" src="https://drive.google.com/uc?export=view&id=1R5o44naSxYTlL3nwGay3IUBnu21Tv0MW" title="Search" type="button" onclick="printname()"></a>
     </div>
     <div class="buttons">
-
-      <button class="button" type="button" onclick="keyform()" >Subject Search</button>
-
-      <button class="button" type="button" onclick="keyform()" >Target Keyword</button>
-
+      <button class="button" type="button" onclick="printname()" >Subject Keyword</button>
      </div>
   </body>
 </html>
- 
- 
+
+
 <!------------------------------------------------------Key element------------------------------------------------------->
- 
+
 <html>
 <head>
 <style> 
@@ -144,14 +140,14 @@ li a:hover {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
-	<h1></h1>
+    <title>Subject</title>
+  <h1></h1>
   </head>
 
   <body>
 
- <label < id="keyform"<br><br>  </label>
- 
+ <label < id="custumer_output"<br><br>  </label>
+
 <script>
  function printname(){
   var giveName = document.getElementById("name").value;
@@ -183,45 +179,10 @@ li a:hover {
   var giveName = giveName.replace("What are the", "")
   var giveName = giveName.replace("Other", "Alternatives")
 
+
+  document.getElementById("custumer_output").innerHTML = "    You can search it as ' " + giveName + "'";
   window.open('http://google.com/search?q='+giveName, "_self");
-  
-}
 
-<script>
- function keyform(){
-  var giveName = document.getElementById("name").value;
-  var giveName = giveName.replace("How might we", "")
-  var giveName = giveName.replace("How can i ", "")
-  var giveName = giveName.replace("Who is the ", "")
-  var giveName = giveName.replace("How to ", "")
-  var giveName = giveName.replace("Who is the ", "")
-  var giveName = giveName.replace("Why" , "Reasons")
-  var giveName = giveName.replace("When was", "time when")
-  var giveName = giveName.replace("When was the", "time of ")
-  var giveName = giveName.replace("Where was", "location of")
-  var giveName = giveName.replace("What is the meaning of", "meaning of")
-  var giveName = giveName.replace("What are the", "")
-  var giveName = giveName.replace("Other", "Alternatives for ")
-  var giveName = giveName.replace("Denver is bad", "Denver is cool")
-    // short letter onces
-  var giveName = giveName.replace("how might we", "")
-  var giveName = giveName.replace("how can i", "")
-  var giveName = giveName.replace("how might we", "")
-  var giveName = giveName.replace("how to", "")
-  var giveName = giveName.replace("who is the", "")
-  var giveName = giveName.replace("why" , "Reasons")
-  var giveName = giveName.replace("when was", "time when")
-  var giveName = giveName.replace("when did", "time when")
-  var giveName = giveName.replace("where was", "location of")
-  var giveName = giveName.replace("when was", "time when")
-  var giveName = giveName.replace("what is the meaning of", "meaning of")
-  var giveName = giveName.replace("What are the", "")
-  var giveName = giveName.replace("Other", "Alternatives")
-
-
-  document.getElementById("printHello").innerHTML = "    You can search it as ' " + giveName + "'";
-
-  
 }
  </script>
   </body>
@@ -229,5 +190,3 @@ li a:hover {
 
 
 
-
-  
